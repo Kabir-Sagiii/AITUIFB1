@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #header {
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        color: white;
+        display: flex;
+      }
+      #title {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #navitems {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        margin: 0;
+      }
+      a {
+        color: cornsilk;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      body {
+        margin: 0;
+        background-image: url("http://isquad.tv/wp-content/uploads/2018/08/Netflix-Background.jpg");
+      }
+      #shadow {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .header {
+        height: 20%;
+        display: flex;
+      }
+      #logo {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #buttons {
+        width: 58%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      button {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+      .main {
+        height: 80%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 55px;
+        margin: 0;
+      }
+      p {
+        margin: 13px;
+      }
+      #subTitle-1 {
+        font-size: 28px;
+      }
+      #subTitle-2 {
+        font-size: 23px;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div id="title">
+        <h2>My-First-Site</h2>
+      </div>
+
+      <div id="navitems">
+        <a href="portfolio.html">PortFolio</a>
+        <a href="Netflix.html">Netflix</a>
+        <a href="Card.html">Profile</a>
+        <a href="Resume.html">Resume</a>
+      </div>
+    </div>
+
+    <div id="shadow">
+      <div class="header">
+        <div id="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            width="150"
+            height="50"
+          />
+        </div>
+        <div id="buttons">
+          <button><i class="bi bi-unlock"></i> Sign In</button>
+          <button>Register</button>
+        </div>
+      </div>
+      <div class="main">
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <p id="subTitle-1">Watch anywhere. Cancel anytime.</p>
+        <p id="subTitle-2">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
