@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        height: 1200px;
+      }
+      .container {
+        width: 500px;
+        height: 100px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 30px;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Input Type="reset"</h2>
+      <form action="" method="" onsubmit="">
+        <input type="text" />
+        <input type="password" />
+        <input type="reset" />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>
+        Attribute: maxlength, size, required, minlength, disabled, readonly
+      </h2>
+      <form>
+        OTP:
+        <input
+          type="text"
+          maxlength="4"
+          size="2"
+          required
+          minlength="2"
+          readonly
+          value="1234"
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+    <div style="text-align: center" class="">
+      <h2>TextArea Element</h2>
+
+      <textarea rows="10" cols="50"> </textarea>
+    </div>
+    <div class="container">
+      <h2>select element</h2>
+      <form>
+        <select>
+          <optgroup label="Programming Language">
+            <option>Java</option>
+            <option>Javascript</option>
+            <option>C#</option>
+          </optgroup>
+
+          <optgroup label="Framework">
+            <option>Springboot</option>
+            <option>Django</option>
+            <option>Asp.net MVC</option>
+            <option>Angular</option>
+          </optgroup>
+
+          <optgroup label="Libraries">
+            <option>React JS</option>
+            <option>Jqyery</option>
+            <option>Bootstrap</option>
+          </optgroup>
+        </select>
+      </form>
+    </div>
+    <div class="container">
+      <h2>select element</h2>
+      <form>
+        <select>
+          <option>Select City</option>
+          <option>Banglore</option>
+          <option>Hyderabad</option>
+          <option>Pune</option>
+          <option>Mumbai</option>
+          <option>Gurgoan</option>
+        </select>
+      </form>
+    </div>
+    <div class="container">
+      <input list="mylist" />
+
+      <datalist id="mylist">
+        <option value="Sagar"></option>
+        <option value="Sachin"></option>
+        <option value="Sid"></option>
+        <option value="Sneha"></option>
+        <option value="Rutuja"></option>
+        <option value="Ziya"></option>
+      </datalist>
+    </div>
+    <div class="container">
+      <h2>Input Type="checkbox"</h2>
+      <form>
+        <input type="checkbox" name="html" />HTML
+        <input type="checkbox" name="css" />CSS
+        <input type="checkbox" name="js" />JS
+      </form>
+    </div>
+    <div class="container">
+      <h2>Input Type="radio"</h2>
+      <form>
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />Other
+      </form>
+    </div>
+    <div class="container">
+      <h2>Input Type="time"</h2>
+      <form>
+        <input type="time" />
+      </form>
+    </div>
+    <div class="container">
+      <h2>Input Type="date"</h2>
+      <form>
+        <input type="date" />
+      </form>
+    </div>
+    <div class="container">
+      <h2>Input Type="text"</h2>
+      <form>
+        <input type="text" placeholder="Enter Name" value="Sagar" />
+        <input type="text" placeholder="Enter Phone No" />
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Input Type="password"</h2>
+      <form>
+        <input type="password" />
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Input Type="button"</h2>
+      <form>
+        <input type="button" value="Login" />
+        <input type="button" value="Register" />
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Input Type="email"</h2>
+      <form>
+        <input type="email" placeholder="Enter Email Id" />
+        <input type="button" value="Submit" />
+      </form>
+    </div>
+    <div class="container">
+      <h2>Input Type="number"</h2>
+      <form>
+        <input type="number" placeholder="Enter Phone" />
+      </form>
+    </div>
+    <div class="container">
+      <h2>Input Type="color"</h2>
+      <form>
+        <input type="color" />
+      </form>
+    </div>
+  </body>
+</html>
