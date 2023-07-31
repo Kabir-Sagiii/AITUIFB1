@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .gridContainerColumns {
+        width: 800px;
+        height: 400px;
+        border: 2px solid black;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+      }
+      .gridContainerRows {
+        width: 800px;
+        height: 400px;
+        border: 2px solid black;
+        margin: 50px auto;
+        display: grid;
+        grid-template-rows: 50px 200px 100px 50px;
+      }
+      .box1 {
+        background-color: lightgreen;
+      }
+      .box2 {
+        background-color: lightsalmon;
+      }
+      .box3 {
+        background-color: lightcoral;
+      }
+      .box4 {
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridContainerColumns">
+      <div class="box1">Col 1</div>
+      <div class="box2">Col 2</div>
+      <div class="box3">Col 3</div>
+      <div class="box4">Col 4</div>
+    </div>
+
+    <div class="gridContainerRows">
+      <div class="box1">Row 1</div>
+      <div class="box2">Row 2</div>
+      <div class="box3">Row 3</div>
+      <div class="box4">Row 4</div>
+    </div>
+  </body>
+</html>
