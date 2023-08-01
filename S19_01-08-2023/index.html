@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #header {
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        color: white;
+        display: flex;
+      }
+      #title {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #navitems {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        color: cornsilk;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      * {
+        margin: 0;
+      }
+      .container {
+        width: 1100px;
+        height: 400px;
+        /* box-shadow: 0 0 10px black; */
+        display: grid;
+        margin: 50px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        gap: 30px;
+      }
+      .box1 {
+        grid-column: 1/3;
+        background-image: url("https://th.bing.com/th/id/OIP.oL6gUjxDGe50rtfzxIPmrwHaE8?pid=ImgDet&rs=1");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 1/3;
+        background-color: red;
+      }
+      h1 {
+        margin-bottom: 25px;
+        margin-top: 100px;
+        font-size: 52px;
+      }
+      .box1 p {
+        margin-bottom: 35px;
+      }
+      .shadow {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+      }
+      button {
+        padding: 13px 30px;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: white;
+        font-size: 15px;
+        border: 1px solid white;
+      }
+      .box2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+
+        background-image: url("https://opconventioncenter.com/wp-content/uploads/2019/10/AdobeStock_153032995.jpeg");
+        background-size: 300px;
+        background-position: center;
+      }
+      .box3 {
+        grid-column: 3 /4;
+        grid-row: 2/3;
+        background-image: url("https://th.bing.com/th/id/R.fbbc15bae2db37016750f001076aa504?rik=OrCY7nxPEUefUA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fgirls-shopping-png-hd--1133.png&ehk=Ai9eVK7juLRw%2bHqjlgEcKlDBn%2b0gadloN1VFlERVjsk%3d&risl=&pid=ImgRaw&r=0");
+        background-size: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .section-2 {
+        width: 1200px;
+        height: 660px;
+        margin: 30px auto;
+      }
+      .containerCategory {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px;
+        row-gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="title">
+        <h2>My-First-Site</h2>
+      </div>
+
+      <div id="navitems">
+        <a href="portfolio.html">PortFolio</a>
+        <a href="Netflix.html">Netflix</a>
+        <a href="Card.html">Profile</a>
+        <a href="Resume.html">Resume</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box1">
+        <div class="shadow">
+          <h1>Women Fashion</h1>
+          <div style="width: 500px; margin: 0px auto">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Provident, odio commodi laborum ducimus natus libero sapiente
+            </p>
+          </div>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="shadow">
+          <h3 style="margin-bottom: 15px">Special Offer</h3>
+          <h2>Women Fashion</h2>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="shadow">
+          <h3 style="margin-bottom: 15px">Special Offer</h3>
+          <h2>Women Fashion</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2">
+      <h1>CATEGORIES</h1>
+      <div class="containerCategory">
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+        <div style="display: flex; height: 100px">
+          <div style="width: 40%">
+            <img
+              src="https://thumbs.dreamstime.com/b/shopping-girl-happy-bags-shop-32032592.jpg"
+              width="100%"
+              height="100"
+            />
+          </div>
+          <div
+            style="
+              width: 60%;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <h4>Category Name</h4>
+            <p>100 Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

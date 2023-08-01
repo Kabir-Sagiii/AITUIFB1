@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .container {
+        width: 1100px;
+        height: 400px;
+        border: 2px solid red;
+        margin: 50px auto;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: 1fr 2fr 3fr;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-rows: 1fr 1fr;
+        color: white;
+      }
+      .g1 {
+        background-color: lightslategray;
+      }
+      .g2 {
+        background-color: lightcoral;
+      }
+      .g3 {
+        background-color: lightseagreen;
+      }
+      .g4 {
+        background-color: rgb(178, 32, 166);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="g1">GridItem 1</div>
+      <div class="g2">GridItem 2</div>
+      <div class="g3">GridItem 3</div>
+      <div class="g4">GridItem 4</div>
+    </div>
+  </body>
+</html>
