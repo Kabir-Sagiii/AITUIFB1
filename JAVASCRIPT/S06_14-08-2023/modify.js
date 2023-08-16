@@ -10,6 +10,6 @@ console.log(product);
 
 //Modify or Update Property
 
-product.pName = "Samsung Galaxy S23 Ultra";
+product.pName = "Samsung Galaxy S23 Ultra"; //
 product.price = 125000;
 console.log(product);
