@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function createDOMButton() {
+        var btnRef = document.createElement("button"); //<button> </button>
+        var h2Ref = document.createElement("h2");
+
+        h2Ref.innerText = "UI is created using Javascript";
+        btnRef.innerText = "Remove Javascript UI";
+        btnRef.style.color = "white";
+        btnRef.style.border = "none";
+        btnRef.style.padding = "15px 25px";
+        btnRef.style.backgroundColor = "darkred";
+        btnRef.onclick = function () {
+          //   h2Ref.style.color = "green";
+          h2Ref.remove();
+          btnRef.remove();
+        };
+        document.getElementById("body").appendChild(h2Ref);
+        document.getElementById("body").appendChild(btnRef);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <h2>DOM Element</h2>
+    <button>HTML Button</button>
+    <button onclick="createDOMButton()">Create DOM Button</button>
+  </body>
+</html>
