@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+}
+div {
+  padding: 50px;
+}
+header {
+  background-color: black;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2,
+p,
+button {
+  margin-top: 10px;
+}

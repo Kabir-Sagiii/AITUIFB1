@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function classSelector() {
+        var paraReferences = document.getElementsByClassName("p1");
+        // var para = document.getElementsByName("p1");
+
+        // para[1].style.color = "red";
+        // para[1].innerText =
+        //   "<b><i>This is 3rd Para which looks little bold</i></b>";
+
+        // console.log(para);
+        // // console.log(paraReferences);
+        // paraReferences[1].style.color = "green";
+        // paraReferences[1].style.backgroundColor = "black";
+        // paraReferences[1].style.padding = "20px";
+
+        // paraReferences[2].style.color = "coral";
+        paraReferences[0].outerHTML =
+          "<i>This is my outerText Property</i><br/><br/><br/>";
+
+        // for (let x in paraReferences[0]) {
+        //   console.log(x);
+        // }
+      }
+
+      function f1() {
+        var btn = document.getElementById("btn");
+        btn.innerText = "Mouse Entered";
+      }
+      function f2() {
+        var btn = document.getElementById("btn");
+        btn.textContent = "Mouse Left";
+      }
+
+      function fn(event) {
+        // for (var x in event) {
+        //   console.log(x);
+        // }
+
+        console.log(event.target);
+        event.target.style.color = "green";
+        event.target.remove();
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Class Selector</h2>
+      <input placeholder="Enter Some Text" />
+      <button
+        id="btn"
+        onclick="fn(event)"
+        onmouseenter="f1()"
+        onmouseleave="f2()"
+      >
+        Change
+      </button>
+      <!-- <p class="p1" name="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est
+        provident non in cupiditate esse iure neque quas. Accusamus
+        reprehenderit dignissimos explicabo et sed omnis perspiciatis, ut
+        magnam! Ut, praesentium?
+      </p>
+      <p class="p1" name="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est
+        provident non in cupiditate esse iure neque quas. Accusamus
+        reprehenderit dignissimos explicabo et sed omnis perspiciatis, ut
+        magnam! Ut, praesentium?
+      </p>
+      <p name="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est
+        provident non in cupiditate esse iure neque quas. Accusamus
+        reprehenderit dignissimos explicabo et sed omnis perspiciatis, ut
+        magnam! Ut, praesentium?
+      </p> -->
+      <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est
+        provident non in cupiditate esse iure neque quas. Accusamus
+        reprehenderit dignissimos explicabo et sed omnis perspiciatis, ut
+        magnam! Ut, praesentium?
+      </p>
+
+      <button onclick="classSelector()">Select Para</button>
+    </div>
+  </body>
+</html>
