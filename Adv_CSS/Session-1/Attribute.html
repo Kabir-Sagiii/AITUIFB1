@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        border: 2px solid green;
+      }
+
+      input[placeholder="password"] {
+        border: 3px solid red;
+      }
+
+      div[name="pwd"] {
+        width: 300px;
+        padding: 30px;
+        border: 4px dotted black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Attribute Selector</h2>
+
+    <form>
+      <div>
+        <input type="text" placeholder="username" />
+      </div>
+      <br />
+      <div>
+        <input type="text" placeholder="email id" />
+      </div>
+      <br />
+
+      <div name="pwd">
+        <input type="password" placeholder="password" />
+      </div>
+      <br />
+      <button>Login</button>
+    </form>
+  </body>
+</html>
