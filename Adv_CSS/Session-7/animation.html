@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animation Document</title>
+    <style>
+      @keyframes basicanimation {
+        from {
+          background-color: black;
+          color: red;
+          font-size: 15px;
+          padding: 0;
+          border: 4px solid black;
+          display: block;
+        }
+        to {
+          background-color: red;
+          color: white;
+          font-size: 22px;
+          padding: 20px;
+          box-shadow: 0 0 10px black;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      @keyframes animation2 {
+        0% {
+          background-color: black;
+          color: white;
+        }
+        25% {
+          background-color: blue;
+          color: black;
+          text-shadow: 0 0 10px red;
+        }
+        50% {
+          background-color: brown;
+          color: white;
+          text-shadow: 0 0 10px green;
+        }
+        75% {
+          background-color: lightgreen;
+          color: black;
+          text-shadow: 0 0 10px red;
+        }
+        100% {
+          background-color: lightcoral;
+          color: white;
+          text-shadow: 0 0 10px black;
+        }
+      }
+
+      @keyframes bganimation {
+        0% {
+          background-image: url("https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?cs=srgb&dl=action-asphalt-auto-210019.jpg&fm=jpg");
+          background-position: center;
+          background-size: 100%;
+        }
+        25% {
+          background-image: url("https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?cs=srgb&dl=asphalt-auto-automobile-244206.jpg&fm=jpg");
+          background-position: center;
+          background-size: 100%;
+        }
+        50% {
+          background-image: url("https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-3.jpg");
+          background-position: center;
+          background-size: 100%;
+        }
+        75% {
+          background-image: url("https://th.bing.com/th/id/R.e0e51fc78fdcd06e6d005a3c34ce91fc?rik=iPWJNJtesNHs6Q&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f07%2f21%2f397775-car-sports_car-Super_Car-nature-landscape-road-clouds-Audi-Audi_R8-field-mountains-hills-sun_rays-plants-blue_cars-vehicle.jpg&ehk=lmGk4fH0rlshNdX%2fw90QAqLMtSif9hKqxgKbzI7iRTM%3d&risl=&pid=ImgRaw&r=0");
+          background-position: center;
+          background-size: 100%;
+        }
+        100% {
+          background-image: url("https://static.businessinsider.com/image/550c6d0c6da8118d60b5030a/image.jpg");
+          background-position: center;
+          background-size: 100%;
+        }
+      }
+
+      #first {
+        width: 500px;
+        height: 100px;
+        border: 2px solid green;
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        animation-name: animation2;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+      }
+
+      #bg {
+        width: 1200px;
+        margin: 50px auto;
+        height: 500px;
+        box-shadow: 0 0 10px black;
+
+        animation-name: bganimation;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        /* animation-iteration-count: infinite; */
+        /* animation-direction: alternate-reverse; */
+        animation-fill-mode: both;
+        /* animation-timing-function: ; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg"></div>
+    <div id="first">Animation Container</div>
+  </body>
+</html>
