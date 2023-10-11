@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: lightcoral;
+        display: flex;
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        transition-property: transform;
+        transition-duration: 3s;
+        transition-delay: 2s;
+        transition-timing-function: ease;
+      }
+
+      div:hover {
+        background-color: brown;
+        /* transform: scaleX(2); */
+        /* transform: scaleY(0.5); */
+        transform: scale(0.5, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div>Scale</div>
+  </body>
+</html>

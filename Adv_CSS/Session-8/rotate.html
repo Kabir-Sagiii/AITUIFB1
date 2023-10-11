@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: lightcoral;
+        display: flex;
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        transition-property: transform;
+        transition-duration: 8s;
+        transition-delay: 2s;
+      }
+
+      div:hover {
+        background-color: brown;
+        transform: rotateX(360deg);
+        transform: rotateY(-360deg);
+        transform: rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>Rotate</div>
+  </body>
+</html>
